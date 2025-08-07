@@ -62,8 +62,118 @@
         },
         {
             "label": "2025-08-07_12-03-03",
-            "content": "import java.util.List;\nimport java.util.Arrays;\nimport java.util.Scanner;\nimport java.util.ArrayList;\n\nclass Student {\n    static boolean in(List<Integer> vet, int x) {\n        for (Integer i: vet) {\n            if (i == x){\n                return true;\n            }\n        }\n        return false;\n    }\n\n    static int indexOf(List<Integer> vet, int x) {\n        for (int i = 0; i< vet.size(); i++){\n            if (vet.get(i) == x){\n                return i;\n            }\n        }\n        return -1;\n    }\n\n    static int findIf(List<Integer> vet) {\n        for (int i = 0; i< vet.size(); i++){\n            if (vet.get(i) > 0){\n                return i;\n            }\n        }\n        return -1;\n    }\n\n    static int minElement(List<Integer> vet) {\n        int min = Integer.MAX_VALUE;\n        for (Integer i: vet){\n            if (i < min){\n                min = i;\n            }\n        }\n        return min;\n    }\n\n    static int findMinIf(List<Integer> vet) {\n        int min = Integer.MAX_VALUE;\n        int idx = 0;\n        for (int i = 0; i< vet.size(); i++){\n            if (vet.get(i) > 0 && vet.get(i) < min){\n                min = vet.get(i);\n                idx = i;\n            }\n        }\n        return idx;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Rodando o arquivo do estudante\");\n    }\n}\n\n\npublic class Shell {\n    public static void main(String[] _args) {\n        while (true) {\n            String line = scanner.nextLine();\n            System.out.println('$' + line);\n\n            var par = line.split(\" \");\n            var cmd = par[0];\n\n            if (\"end\".equals(cmd)) {\n                break;\n            }\n            else if (\"in\".equals(cmd)) {\n                var array = strToVet(par[1]);\n                var value = Integer.parseInt(par[2]);\n                var result = Student.in(array, value); \n                System.out.println(result ? \"true\" : \"false\");\n            }\n            else if (\"index_of\".equals(cmd)) {\n                var array = strToVet(par[1]);\n                var value = Integer.parseInt(par[2]);\n                var result = Student.indexOf(array, value);\n                System.out.println(\"\" + result);\n            }\n            else if (\"find_if\".equals(cmd)) {\n                var result = Student.findIf(strToVet(par[1]));\n                System.out.println(\"\" + result);\n            }\n            else if (\"min_element\".equals(cmd)) {\n                var result = Student.minElement(strToVet(par[1]));\n                System.out.println(\"\" + result);\n            }\n            else if (\"find_min_if\".equals(cmd)) {\n                var result = Student.findMinIf(strToVet(par[1]));\n                System.out.println(\"\" + result);\n            }\n            else { \n                System.out.println(\"fail: comando invalido\");\n            }\n        }\n    }\n\n    public static List<Integer> strToVet(String s) {\n        if(s.length() == 2) return new ArrayList<>();\n        List<String> parts = Arrays.asList(s.substring(1, s.length() - 1).split(\",\"));\n        List<Integer> result = new ArrayList<>();\n        for (String part : parts)\n            result.add(Integer.parseInt(part.trim()));\n        return result;\n    }\n\n    static Scanner scanner = new Scanner(System.in);\n}\n",
+            "content": "@@ -754,68 +754,8 @@\n ) %7B%0A\n-        if (vet.isEmpty())%7B%0A            return -1%0A        %7D%0A\n     \n",
             "lines": "114"
+        },
+        {
+            "label": "2025-08-07_15-38-28",
+            "content": "@@ -795,25 +795,24 @@\n    return -1\n-;\n %0A        %7D%0A \n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-08-07_15-38-33",
+            "content": "@@ -833,43 +833,26 @@\n n = \n-vet.get(0);%0A        int menor = min\n+Integer.MAX_VALUE;\n %0A   \n@@ -900,17 +900,8 @@\n  (i \n-%3E 0 && i \n %3C mi\n@@ -955,153 +955,29 @@\n     \n-    if i %3C menor%7B%0A                menor = i%0A            %7D%0A        %7D%0A        if min %3E menor%7B%0A            return min%0A        %7D%0A        return menor\n+%7D%0A        return min;\n %0A   \n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-08-07_16-00-52",
+            "content": "@@ -1016,25 +1016,24 @@\n    menor = i\n-;\n %0A           \n@@ -1091,17 +1091,16 @@\n turn min\n-;\n %0A       \n@@ -1122,17 +1122,16 @@\n rn menor\n-;\n %0A    %7D%0A%0A\n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-08-07_16-00-59",
+            "content": "@@ -860,25 +860,24 @@\n  menor = min\n-;\n %0A        for\n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-08-07_16-01-16",
+            "content": "@@ -985,17 +985,16 @@\n      if \n-(\n i %3C meno\n@@ -990,25 +990,24 @@\n if i %3C menor\n-)\n %7B%0A          \n@@ -1058,17 +1058,16 @@\n      if \n-(\n min %3E me\n@@ -1069,17 +1069,16 @@\n  %3E menor\n-)\n %7B%0A      \n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-08-07_16-02-54",
+            "content": "@@ -829,33 +829,26 @@\n t min = \n-Integer.MAX_VALUE\n+vet.get(0)\n ;%0A      \n@@ -853,21 +853,27 @@\n     int \n-value\n+menor = min\n ;%0A      \n@@ -912,44 +912,28 @@\n     \n-value = i;%0A            if (value %3C 0\n+if (i %3E 0 && i %3C min\n )%7B%0A \n@@ -951,19 +951,16 @@\n     \n-value *= -1\n+min = i;\n %0A   \n@@ -990,19 +990,17 @@\n if (\n-min %3E value\n+i %3C menor\n )%7B%0A \n@@ -1019,18 +1019,17 @@\n    m\n-in = value\n+enor = i;\n %0A   \n@@ -1061,18 +1061,81 @@\n     \n-return min\n+if (min %3E menor)%7B%0A            return min;%0A        %7D%0A        return menor;\n %0A   \n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-08-07_16-24-44",
+            "content": "@@ -1043,25 +1043,24 @@\n  min = value\n-;\n %0A           \n@@ -1090,17 +1090,16 @@\n turn min\n-;\n %0A    %7D%0A%0A\n",
+            "lines": "122"
+        },
+        {
+            "label": "2025-08-07_16-24-53",
+            "content": "@@ -975,17 +975,16 @@\n ue *= -1\n-;\n %0A       \n",
+            "lines": "122"
+        },
+        {
+            "label": "2025-08-07_16-24-58",
+            "content": "@@ -884,37 +884,22 @@\n or (\n-int i = 0; i%3C\n+Integer i:\n  vet\n-.size(); i++\n )%7B%0A \n@@ -917,26 +917,17 @@\n value = \n-vet.get(i)\n+i\n ;%0A      \n",
+            "lines": "122"
+        },
+        {
+            "label": "2025-08-07_16-27-24",
+            "content": "@@ -869,11 +869,8 @@\n alue\n-, r\n ;%0A  \n@@ -1078,30 +1078,8 @@\n ue;%0A\n-                r = i%0A\n     \n@@ -1113,17 +1113,19 @@\n  return \n-r\n+min\n ;%0A    %7D%0A\n",
+            "lines": "122"
+        },
+        {
+            "label": "2025-08-07_16-28-08",
+            "content": "@@ -1094,25 +1094,24 @@\n        r = i\n-;\n %0A           \n",
+            "lines": "123"
+        },
+        {
+            "label": "2025-08-07_16-28-13",
+            "content": "@@ -867,19 +867,17 @@\n  value, \n-idx\n+r\n ;%0A      \n@@ -1085,35 +1085,33 @@\n                 \n-idx\n+r\n  = i;%0A          \n@@ -1131,35 +1131,33 @@\n %0A        return \n-idx\n+r\n ;%0A    %7D%0A%0A    sta\n",
+            "lines": "123"
+        },
+        {
+            "label": "2025-08-07_16-28-51",
+            "content": "@@ -865,37 +865,21 @@\n nt value\n-;%0A        int idx = 0\n+, idx\n ;%0A      \n",
+            "lines": "123"
+        },
+        {
+            "label": "2025-08-07_16-29-07",
+            "content": "@@ -957,32 +957,103 @@\n e = vet.get(i);%0A\n+            if (value %3C 0)%7B%0A                value *= -1;%0A            %7D%0A\n             if (\n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-08-07_16-32-40",
+            "content": "@@ -885,18 +885,17 @@\n t idx = \n--1\n+0\n ;%0A      \n@@ -965,17 +965,16 @@\n get(i);%0A\n-%0A\n         \n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-08-07_16-33-20",
+            "content": "@@ -840,32 +840,51 @@\n eger.MAX_VALUE;%0A\n+        int value;%0A\n         int idx \n@@ -942,28 +942,24 @@\n             \n-int \n value = vet.\n",
+            "lines": "122"
+        },
+        {
+            "label": "2025-08-07_16-33-33",
+            "content": "@@ -858,33 +858,34 @@\n       int idx = \n-0\n+-1\n ;%0A        for (i\n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-08-07_16-33-39",
+            "content": "@@ -852,27 +852,8 @@\n UE;%0A\n-        int value;%0A\n     \n@@ -926,16 +926,20 @@\n         \n+int \n value = \n@@ -950,28 +950,16 @@\n get(i);%0A\n-            \n %0A       \n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-08-07_16-33-52",
+            "content": "@@ -957,32 +957,45 @@\n e = vet.get(i);%0A\n+            %0A\n             if (\n",
+            "lines": "122"
+        },
+        {
+            "label": "2025-08-07_16-34-00",
+            "content": "@@ -840,32 +840,51 @@\n eger.MAX_VALUE;%0A\n+        int value;%0A\n         int idx \n@@ -941,28 +941,24 @@\n             \n-int \n value = vet.\n",
+            "lines": "121"
+        },
+        {
+            "label": "2025-08-07_16-34-11",
+            "content": "@@ -1186,18 +1186,17 @@\n t idx = \n--1\n+0\n ;%0A      \n",
+            "lines": "120"
+        },
+        {
+            "label": "2025-08-07_16-35-51",
+            "content": "import java.util.List;\nimport java.util.Arrays;\nimport java.util.Scanner;\nimport java.util.ArrayList;\n\nclass Student {\n    static boolean in(List<Integer> vet, int x) {\n        for (Integer i: vet) {\n            if (i == x){\n                return true;\n            }\n        }\n        return false;\n    }\n\n    static int indexOf(List<Integer> vet, int x) {\n        for (int i = 0; i< vet.size(); i++){\n            if (vet.get(i) == x){\n                return i;\n            }\n        }\n        return -1;\n    }\n\n    static int findIf(List<Integer> vet) {\n        for (int i = 0; i< vet.size(); i++){\n            if (vet.get(i) > 0){\n                return i;\n            }\n        }\n        return -1;\n    }\n\n    static int minElement(List<Integer> vet) {\n        if (vet.isEmpty()){\n            return -1;\n        }\n        int min = Integer.MAX_VALUE;\n        int idx = 0;\n        for (int i = 0; i< vet.size(); i++){\n            int value = vet.get(i);\n            if (min > value){\n                min = value;\n                idx = i;\n            }\n        }\n        return idx;\n    }\n\n    static int findMinIf(List<Integer> vet) {\n        int min = Integer.MAX_VALUE;\n        int idx = -1;\n        for (int i = 0; i< vet.size(); i++){\n            if (vet.get(i) > 0 && vet.get(i) < min){\n                min = vet.get(i);\n                idx = i;\n            }\n        }\n        return idx;\n    }\n\n    public static void main(String[] args) {\n        System.out.println(\"Rodando o arquivo do estudante\");\n    }\n}\n\n\npublic class Shell {\n    public static void main(String[] _args) {\n        while (true) {\n            String line = scanner.nextLine();\n            System.out.println('$' + line);\n\n            var par = line.split(\" \");\n            var cmd = par[0];\n\n            if (\"end\".equals(cmd)) {\n                break;\n            }\n            else if (\"in\".equals(cmd)) {\n                var array = strToVet(par[1]);\n                var value = Integer.parseInt(par[2]);\n                var result = Student.in(array, value); \n                System.out.println(result ? \"true\" : \"false\");\n            }\n            else if (\"index_of\".equals(cmd)) {\n                var array = strToVet(par[1]);\n                var value = Integer.parseInt(par[2]);\n                var result = Student.indexOf(array, value);\n                System.out.println(\"\" + result);\n            }\n            else if (\"find_if\".equals(cmd)) {\n                var result = Student.findIf(strToVet(par[1]));\n                System.out.println(\"\" + result);\n            }\n            else if (\"min_element\".equals(cmd)) {\n                var result = Student.minElement(strToVet(par[1]));\n                System.out.println(\"\" + result);\n            }\n            else if (\"find_min_if\".equals(cmd)) {\n                var result = Student.findMinIf(strToVet(par[1]));\n                System.out.println(\"\" + result);\n            }\n            else { \n                System.out.println(\"fail: comando invalido\");\n            }\n        }\n    }\n\n    public static List<Integer> strToVet(String s) {\n        if(s.length() == 2) return new ArrayList<>();\n        List<String> parts = Arrays.asList(s.substring(1, s.length() - 1).split(\",\"));\n        List<Integer> result = new ArrayList<>();\n        for (String part : parts)\n            result.add(Integer.parseInt(part.trim()));\n        return result;\n    }\n\n    static Scanner scanner = new Scanner(System.in);\n}\n",
+            "lines": "120"
         }
     ]
 }

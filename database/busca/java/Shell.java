@@ -32,18 +32,24 @@ class Student {
     }
 
     static int minElement(List<Integer> vet) {
+        if (vet.isEmpty()){
+            return -1;
+        }
         int min = Integer.MAX_VALUE;
-        for (Integer i: vet){
-            if (i < min){
-                min = i;
+        int idx = 0;
+        for (int i = 0; i< vet.size(); i++){
+            int value = vet.get(i);
+            if (min > value){
+                min = value;
+                idx = i;
             }
         }
-        return min;
+        return idx;
     }
 
     static int findMinIf(List<Integer> vet) {
         int min = Integer.MAX_VALUE;
-        int idx = 0;
+        int idx = -1;
         for (int i = 0; i< vet.size(); i++){
             if (vet.get(i) > 0 && vet.get(i) < min){
                 min = vet.get(i);

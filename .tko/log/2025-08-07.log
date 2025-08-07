@@ -33,3 +33,51 @@
 2025-08-07 12:19:05, MOVE, v:1, k:busca, mode:PICK
 2025-08-07 12:19:07, EXEC, v:1, k:busca, mode:FREE
 2025-08-07 12:28:31, MOVE, v:1, k:busca, mode:BACK
+2025-08-07 15:35:09, MOVE, v:1, k:busca, mode:PICK
+2025-08-07 15:35:13, EXEC, v:1, k:busca, mode:FULL, rate:60
+2025-08-07 15:36:44, EXEC, v:1, k:busca, mode:FREE
+2025-08-07 15:37:11, MOVE, v:1, k:busca, mode:PICK
+2025-08-07 15:37:14, EXEC, v:1, k:busca, mode:FULL, rate:60
+2025-08-07 15:38:28, EXEC, v:1, k:busca, mode:FULL, size:117, fail:COMP
+2025-08-07 15:38:33, EXEC, v:1, k:busca, mode:FULL, size:117, fail:COMP
+2025-08-07 15:38:38, EXEC, v:1, k:busca, mode:FULL, rate:60
+2025-08-07 16:00:52, EXEC, v:1, k:busca, mode:FULL, size:124, fail:COMP
+2025-08-07 16:00:59, EXEC, v:1, k:busca, mode:FULL, size:124, fail:COMP
+2025-08-07 16:01:00, EXEC, v:1, k:busca, mode:FULL, fail:COMP
+2025-08-07 16:01:16, EXEC, v:1, k:busca, mode:FULL, size:124, fail:COMP
+2025-08-07 16:01:17, EXEC, v:1, k:busca, mode:FULL, fail:COMP
+2025-08-07 16:02:54, EXEC, v:1, k:busca, mode:FULL, rate:60, size:124
+2025-08-07 16:24:45, EXEC, v:1, k:busca, mode:FULL, size:122, fail:COMP
+2025-08-07 16:24:53, EXEC, v:1, k:busca, mode:FULL, size:122, fail:COMP
+2025-08-07 16:24:58, EXEC, v:1, k:busca, mode:FULL, size:122, fail:COMP
+2025-08-07 16:25:22, EXEC, v:1, k:busca, mode:FULL, rate:60
+2025-08-07 16:27:24, EXEC, v:1, k:busca, mode:FULL, rate:60, size:122
+2025-08-07 16:28:08, EXEC, v:1, k:busca, mode:FULL, size:123, fail:COMP
+2025-08-07 16:28:13, EXEC, v:1, k:busca, mode:FULL, size:123, fail:COMP
+2025-08-07 16:28:15, EXEC, v:1, k:busca, mode:FULL, fail:COMP
+2025-08-07 16:28:17, EXEC, v:1, k:busca, mode:FULL, fail:COMP
+2025-08-07 16:28:19, EXEC, v:1, k:busca, mode:FULL, fail:COMP
+2025-08-07 16:28:29, EXEC, v:1, k:busca, mode:FULL, fail:COMP
+2025-08-07 16:28:51, EXEC, v:1, k:busca, mode:FULL, size:123, fail:COMP
+2025-08-07 16:29:07, EXEC, v:1, k:busca, mode:FULL, rate:60, size:124
+2025-08-07 16:32:40, EXEC, v:1, k:busca, mode:FULL, rate:60, size:121
+2025-08-07 16:33:20, EXEC, v:1, k:busca, mode:FULL, rate:80, size:122
+2025-08-07 16:33:33, EXEC, v:1, k:busca, mode:FULL, rate:80, size:121
+2025-08-07 16:33:39, EXEC, v:1, k:busca, mode:FULL, rate:80, size:121
+2025-08-07 16:33:52, EXEC, v:1, k:busca, mode:FULL, rate:80, size:122
+2025-08-07 16:34:00, EXEC, v:1, k:busca, mode:FULL, rate:80, size:121
+2025-08-07 16:34:11, EXEC, v:1, k:busca, mode:FULL, size:120, fail:COMP
+2025-08-07 16:34:15, EXEC, v:1, k:busca, mode:FULL, rate:80
+2025-08-07 16:35:51, EXEC, v:1, k:busca, mode:FULL, rate:100, size:120
+2025-08-07 16:35:53, MOVE, v:1, k:busca, mode:BACK
+2025-08-07 16:36:03, SELF, v:1, k:busca, rate:100, flow:6, edge:5
+2025-08-07 16:36:06, MOVE, v:1, k:contagem, mode:DOWN
+2025-08-07 16:36:08, MOVE, v:1, k:contagem, mode:PICK
+2025-08-07 19:16:49, MOVE, v:1, k:contagem, mode:PICK
+2025-08-07 19:52:45, EXEC, v:1, k:contagem, mode:FULL, size:118, fail:COMP
+2025-08-07 19:52:48, EXEC, v:1, k:contagem, mode:FULL, fail:COMP
+2025-08-07 19:52:54, EXEC, v:1, k:contagem, mode:FULL, size:116, fail:COMP
+2025-08-07 19:53:18, EXEC, v:1, k:contagem, mode:FULL, size:116, fail:COMP
+2025-08-07 19:53:27, EXEC, v:1, k:contagem, mode:FULL, size:116, fail:COMP
+2025-08-07 19:53:38, EXEC, v:1, k:contagem, mode:FULL, rate:0, size:116
+2025-08-07 19:54:03, EXEC, v:1, k:contagem, mode:FREE
