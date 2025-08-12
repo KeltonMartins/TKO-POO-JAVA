@@ -3,15 +3,19 @@ version: 0.0.1
 database: database
 expanded:
 - configuracao-e-aquecimento
+- campanha-principal
+- primeiras-classes
 tasks:
   busca: '{rate:100, flow:6, edge:5}'
   contagem: '{rate:100, flow:6, edge:5}'
   manipulacao: '{rate:100, flow:6, edge:5}'
   especiais: '{rate:100, flow:6, edge:5}'
+  toalha: '{rate:100, flow:6, edge:5, idx:1}'
+  animal: '{rate:100, flow:6, edge:5, idx:1}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
   graph: 0
 lang: java
-index: campanha-principal
+index: animal

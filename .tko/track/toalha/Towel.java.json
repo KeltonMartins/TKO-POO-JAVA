@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-12_18-49-58",
+            "content": "@@ -592,9 +592,11 @@\n ase \n-P\n+%22P%22\n :%0A  \n@@ -637,17 +637,19 @@\n    case \n-M\n+%22M%22\n :%0A      \n@@ -690,9 +690,11 @@\n ase \n-G\n+%22G%22\n :%0A  \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-08-12_18-59-21",
+            "content": "@@ -561,20 +561,23 @@\n h (this.\n-size\n+wetness\n )%7B%0A     \n@@ -592,11 +592,9 @@\n ase \n-%22P%22\n+P\n :%0A  \n@@ -639,11 +639,9 @@\n ase \n-%22M%22\n+M\n :%0A  \n@@ -686,11 +686,9 @@\n ase \n-%22G%22\n+G\n :%0A  \n@@ -724,35 +724,9 @@\n     \n-    %7D%0A            return 0;\n+%7D\n %0A   \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-08-12_19-03-21",
+            "content": "@@ -794,23 +794,19 @@\n         \n-return \n+if(\n this.wet\n@@ -814,12 +814,69 @@\n ess \n-== 0\n+%3E 0)%7B%0A            return true;%0A        %7D%0A        return false\n ;%0A  \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-08-12_19-04-55",
+            "content": "@@ -1020,20 +1020,21 @@\n println(\n-this\n+Towel\n );%0A    %7D\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-08-12_19-05-54",
+            "content": "@@ -831,22 +831,8 @@\n  %7D%0A%0A\n-    @Override%0A\n     \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-08-12_19-06-14",
+            "content": "@@ -1050,1022 +1050,6 @@\n    %7D\n-%0A%0A    public static Scanner sc = new Scanner(System.in);%0A%0A    public static void main(String%5B%5D args) %7B%0A        %0A        Towel toalha = null;%0A        %0A        while(true)%7B%0A            String line = input();%0A            write(%22$ %22+ line);%0A            String%5B%5D a = line.split(%22 %22);%0A%0A            switch(a%5B0%5D)%7B%0A                case %22init%22:%0A                    toalha = new Towel(a%5B1%5D, a%5B2%5D);%0A                    break;%0A                case %22secar%22:%0A                    toalha.wringOut();%0A                    break;%0A                case %22dry%22:%0A                    toalha.dry(toInt(a%5B2%5D));%0A                    break;%0A                case %22show%22:%0A                    toalha.show();%0A                    break;%0A                case %22end%22:%0A                    return;%0A            %7D%0A        %7D%0A    %7D %0A%0A    public static String input()%7B%0A        return sc.nextLine();%0A    %7D%0A    public static void write(String s)%7B%0A        System.out.println(s);%0A    %7D%0A    public static int toInt(String s)%7B%0A        return Integer.parseInt(s);%0A    %7D\n %0A%7D\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-08-12_19-28-42",
+            "content": "@@ -1,31 +1,4 @@\n-import java.util.Scanner;%0A%0A\n publ\n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-08-12_19-28-58",
+            "content": "@@ -1241,28 +1241,19 @@\n ile(\n-sc.hasNextLine()) %7B%0A\n+true)%7B%0A    \n     \n@@ -1287,16 +1287,20 @@\n         \n+    \n write(%22$\n@@ -1310,16 +1310,20 @@\n  line);%0A\n+    \n         \n@@ -1650,17 +1650,17 @@\n toInt(a%5B\n-1\n+2\n %5D));%0A   \n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-08-12_19-30-57",
+            "content": "@@ -1172,24 +1172,33 @@\n g%5B%5D args) %7B%0A\n+        %0A\n         Towe\n",
+            "lines": "90"
+        },
+        {
+            "label": "2025-08-12_19-32-33",
+            "content": "@@ -1,12 +1,39 @@\n+import java.util.Scanner;%0A%0A\n public class\n@@ -1073,10 +1073,1018 @@\n );%0A    %7D\n+%0A%0A    public static Scanner sc = new Scanner(System.in);%0A%0A    public static void main(String%5B%5D args) %7B%0A        Towel toalha = null;%0A        %0A        while(sc.hasNextLine()) %7B%0A        String line = input();%0A        write(%22$ %22+ line);%0A        String%5B%5D a = line.split(%22 %22);%0A%0A            switch(a%5B0%5D)%7B%0A                case %22init%22:%0A                    toalha = new Towel(a%5B1%5D, a%5B2%5D);%0A                    break;%0A                case %22secar%22:%0A                    toalha.wringOut();%0A                    break;%0A                case %22dry%22:%0A                    toalha.dry(toInt(a%5B1%5D));%0A                    break;%0A                case %22show%22:%0A                    toalha.show();%0A                    break;%0A                case %22end%22:%0A                    return;%0A            %7D%0A        %7D%0A    %7D %0A%0A    public static String input()%7B%0A        return sc.nextLine();%0A    %7D%0A    public static void write(String s)%7B%0A        System.out.println(s);%0A    %7D%0A    public static int toInt(String s)%7B%0A        return Integer.parseInt(s);%0A    %7D\n %0A%7D\n",
+            "lines": "89"
+        },
+        {
+            "label": "2025-08-12_19-36-11",
+            "content": "public class Towel{\n    private String color;\n    private String size;\n    private int wetness;\n\n    public Towel (String color, String size){\n        this.color = color;\n        this.size = size;\n        this.wetness = 0;\n    }\n\n    public void dry(int amount){\n        this.wetness += amount;\n        if (this.wetness > getMaxWetness()){\n            System.out.println(\"toalha encharcada\");\n            this.wetness = getMaxWetness();\n        }\n    }\n\n    public void wringOut(){\n        this.wetness = 0;\n    }\n\n    public int getMaxWetness(){\n        switch (this.size){\n            case \"P\":\n                return 10;\n            case \"M\":\n                return 20;\n            case \"G\":\n                return 30;\n            }\n            return 0;\n    }\n\n    public boolean isDry(){\n        return this.wetness == 0;\n    }\n\n    @Override\n    public String toString(){\n        return \"cor: \" + this.color + \", tamanho: \" + this.size + \", nivel de molhado: \" + this.wetness;\n    }\n\n    public void show(){\n        System.out.println(this);\n    }\n}",
+            "lines": "48"
+        }
+    ]
+}

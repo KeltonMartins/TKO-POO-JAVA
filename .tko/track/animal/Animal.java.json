@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-12_20-21-19",
+            "content": "@@ -500,28 +500,14 @@\n ing:\n-%22 + this.species + %22\n+ cabra\n  mor\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-12_20-23-06",
+            "content": "@@ -489,10 +489,9 @@\n prin\n-ln\n+t\n (%22wa\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-12_20-23-18",
+            "content": "@@ -485,17 +485,16 @@\n out.prin\n-t\n ln(%22warn\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-12_20-23-25",
+            "content": "@@ -498,17 +498,16 @@\n warning:\n- \n %22 + this\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-12_20-23-32",
+            "content": "@@ -426,16 +426,17 @@\n is.age %3E\n+=\n  4)%7B%0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-12_20-23-40",
+            "content": "@@ -305,84 +305,8 @@\n   %7D%0A\n-        if (this.age %3E 4)%7B%0A            System.out.println(%22RIP%22);%0A        %7D%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-08-12_20-24-42",
+            "content": "@@ -315,33 +315,32 @@\n   if (this.age %3E\n-=\n  4)%7B%0A           \n@@ -502,17 +502,16 @@\n is.age %3E\n-=\n  4)%7B%0A   \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-12_20-25-05",
+            "content": "@@ -501,32 +501,58 @@\n this.age %3E= 4)%7B%0A\n+            this.age = 4;%0A\n             Syst\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-12_20-25-44",
+            "content": "@@ -513,34 +513,8 @@\n 4)%7B%0A\n-            this.age = 4;%0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2025-08-12_20-25-52",
+            "content": "@@ -345,20 +345,33 @@\n     \n-return \n+System.out.println(\n %22RIP%22\n+)\n ;%0A  \n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-08-12_20-26-14",
+            "content": "public class Animal{\n    private String species;\n    private String sound;\n    private int age;\n\n    public Animal(String species, String sound){\n        this.species = species;\n        this.sound = sound;\n    }\n\n    public String makeSound(){\n        if (this.age == 0){\n            return \"---\";\n        }\n        if (this.age >= 4){\n            return \"RIP\";\n        }\n        return this.sound;\n    }\n\n    public void ageBy(int increment){\n        this.age += increment;\n        if (this.age >= 4){\n            this.age = 4;\n            System.out.println(\"warning: \" + this.species + \" morreu\");\n        }\n    }\n\n    public String toString(){\n        return this.species + \":\" + this.age + \":\" + this.sound;\n    }\n}",
+            "lines": "32"
+        }
+    ]
+}

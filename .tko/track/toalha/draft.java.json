@@ -1,0 +1,134 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-12_18-13-56",
+            "content": "@@ -36,728 +36,70 @@\n tic \n-Scanner sc = new Scanner(System.in);%0A%0A    public static void main(String args%5B%5D) %7B%0A        write(%22$%22);%0A        String line = input();%0A        String args = line.split(%22 %22);%0A        write(args%5B0%5D);%0A%0A        Towel toalha = new Towel(%22%22, %22%22);%0A%0A        while(true)%7B%0A            switch(args%5B1%5D)%7B%0A                case %22secar%22:%0A                    toalha.wringOut();%0A                case %22dry%22:%0A                    toalha.show(args%5B2%5D);%0A                case %22show%22:%0A                    toalha.show();%0A                case %22end%22:%0A                    return;%0A            %7D%0A        %7D%0A    %7D %0A%0A    public static String input()%7B%0A        return sc.nextline();%0A    %7D%0A    public static void write(String s)%7B%0A        System.out.println(s\n+void main(String args%5B%5D) %7B%0A        System.out.println(%22qxcode%22\n );%0A \n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-08-12_18-49-58",
+            "content": "@@ -1,26 +1,4 @@\n-import java.until.*;%0A%0A\n publ\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-08-12_18-51-28",
+            "content": "@@ -203,18 +203,20 @@\n  String \n-b\n a\n+rgs\n  = line.\n@@ -241,18 +241,20 @@\n   write(\n-b\n a\n+rgs\n %5B0%5D);%0A%0A \n@@ -335,18 +335,20 @@\n  switch(\n-b\n a\n+rgs\n %5B1%5D)%7B%0A  \n@@ -478,10 +478,12 @@\n how(\n-b\n a\n+rgs\n %5B2%5D)\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-08-12_18-51-44",
+            "content": "@@ -239,16 +239,17 @@\n   write(\n+b\n a%5B0%5D);%0A%0A\n@@ -331,16 +331,17 @@\n  switch(\n+b\n a%5B1%5D)%7B%0A \n@@ -468,16 +468,17 @@\n ha.show(\n+b\n a%5B2%5D);%0A \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-08-12_18-55-07",
+            "content": "@@ -206,11 +206,10 @@\n ring\n-%5B%5D\n  \n+b\n a = \n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-08-12_18-56-40",
+            "content": "@@ -17,34 +17,8 @@\n l.*;\n-%0Aimport java.util.Scanner;\n %0A%0Apu\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-08-12_18-57-06",
+            "content": "@@ -175,85 +175,51 @@\n     \n-%0A        Towel toalha = new Towel(%22%22, %22%22);%0A        %0A        while(true)%7B%0A    \n+write(%22$%22);%0A        String line = input();%0A\n     \n@@ -228,37 +228,40 @@\n   String\n- line\n+%5B%5D a\n  = \n+l\n in\n-put();%0A    \n+e.split(%22 %22);%0A\n         \n@@ -270,29 +270,24 @@\n ite(\n-%22$ %22+ line\n+a%5B0%5D\n );%0A\n+%0A\n         \n     \n@@ -286,43 +286,64 @@\n     \n-    String%5B%5D a = line.split(%22 \n+Towel toalha = new Towel(%22%22, %22\n %22);%0A%0A\n+        while(true)%7B%0A\n     \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-08-12_18-57-50",
+            "content": "@@ -192,16 +192,36 @@\n l toalha\n+ = new Towel(%22%22, %22%22)\n ;%0A      \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-08-12_18-58-18",
+            "content": "@@ -196,28 +196,8 @@\n alha\n- = new Towel(%22%22, %22%22)\n ;%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-08-12_18-58-25",
+            "content": "@@ -200,11 +200,24 @@\n  = n\n-ull\n+ew Towel(%22%22, %22%22)\n ;%0A  \n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-08-12_19-08-33",
+            "content": "@@ -714,9 +714,9 @@\n next\n-L\n+l\n ine(\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-08-12_19-09-03",
+            "content": "@@ -490,19 +490,20 @@\n  toalha.\n-dry\n+show\n (a%5B2%5D);%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-08-12_19-09-36",
+            "content": "@@ -1,8 +1,29 @@\n+import java.until.*;%0A\n import j\n",
+            "lines": "36"
+        },
+        {
+            "label": "2025-08-12_19-09-50",
+            "content": "@@ -477,20 +477,13 @@\n dry(\n-toInt(\n a%5B2%5D)\n-)\n ;%0A  \n@@ -783,80 +783,7 @@\n   %7D%0A\n-    public static int toInt(String s)%7B%0A        return parseInt(s);%0A    %7D%0A\n %7D%0A%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2025-08-12_19-11-24",
+            "content": "@@ -844,12 +844,8 @@\n urn \n-int.\n pars\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-08-12_19-12-06",
+            "content": "@@ -844,15 +844,11 @@\n urn \n-I\n+i\n nt\n-eger\n .par\n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-08-12_19-12-11",
+            "content": "@@ -135,15 +135,15 @@\n ring\n-%5B%5D\n  args\n+%5B%5D\n ) %7B%0A\n@@ -344,120 +344,12 @@\n h(a%5B\n-0%5D)%7B%0A                case %22init%22:%0A                    toalha = new Towel(a%5B1%5D, a%5B2%5D);%0A                    break;\n+1%5D)%7B\n %0A   \n@@ -418,35 +418,8 @@\n ();%0A\n-                    break;%0A\n     \n@@ -442,16 +442,16 @@\n  %22dry%22:%0A\n+\n         \n@@ -491,35 +491,8 @@\n ));%0A\n-                    break;%0A\n     \n",
+            "lines": "38"
+        },
+        {
+            "label": "2025-08-12_19-23-21",
+            "content": "@@ -717,35 +717,8 @@\n ();%0A\n-                    break;%0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-08-12_19-26-38",
+            "content": "@@ -135,15 +135,15 @@\n ring\n+%5B%5D\n  args\n-%5B%5D\n ) %7B%0A\n@@ -709,24 +709,51 @@\n lha.show();%0A\n+                    break;%0A\n             \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-08-12_19-36-11",
+            "content": "@@ -717,35 +717,8 @@\n ();%0A\n-                    break;%0A\n     \n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-08-12_19-37-35",
+            "content": "@@ -214,30 +214,8 @@\n e)%7B%0A\n-            try %7B%0A    \n     \n@@ -814,115 +814,8 @@\n   %7D%0A\n-            %7D catch(Exception e) %7B%0A                write(%22Errinho%22);%0A                return;%0A            %7D%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-08-12_19-44-40",
+            "content": "@@ -901,15 +901,9 @@\n inho\n-: %22 . e\n+%22\n );%0A \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-08-12_19-45-03",
+            "content": "@@ -897,17 +897,23 @@\n %22Errinho\n-%22\n+: %22 . e\n );%0A     \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-08-12_19-45-28",
+            "content": "@@ -210,16 +210,38 @@\n (true)%7B%0A\n+            try %7B%0A    \n         \n@@ -828,24 +828,131 @@\n           %7D%0A\n+            %7D catch(Exception e) %7B%0A                write(%22Errinho%22);%0A                return;%0A            %7D%0A\n         %7D%0A  \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-08-12_19-46-06",
+            "content": "@@ -616,17 +616,17 @@\n toInt(a%5B\n-1\n+2\n %5D));%0A   \n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-08-12_19-50-58",
+            "content": "import java.util.Scanner;\n\npublic class draft {\n    public static Scanner sc = new Scanner(System.in);\n\n    public static void main(String args[]) {\n        \n        Towel toalha = null;\n        \n        while(true){\n            String line = input();\n            write(\"$ \"+ line);\n            String[] a = line.split(\" \");\n\n            switch(a[0]){\n                case \"init\":\n                    toalha = new Towel(a[1], a[2]);\n                    break;\n                case \"secar\":\n                    toalha.wringOut();\n                    break;\n                case \"dry\":\n                    toalha.dry(toInt(a[1]));\n                    break;\n                case \"show\":\n                    toalha.show();\n                    break;\n                case \"end\":\n                    return;\n            }\n        }\n    } \n\n    public static String input(){\n        return sc.nextLine();\n    }\n    public static void write(String s){\n        System.out.println(s);\n    }\n    public static int toInt(String s){\n        return Integer.parseInt(s);\n    }\n}\n\n",
+            "lines": "44"
+        }
+    ]
+}

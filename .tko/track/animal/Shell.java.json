@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-12_20-02-44",
+            "content": "@@ -95,16 +95,19 @@\n %0A       \n+ //\n  Animal \n@@ -135,16 +135,16 @@\n %22, %22%22);%0A\n-\n %0A       \n@@ -437,17 +437,16 @@\n it%22) ) %7B\n-=\n %0A       \n@@ -458,29 +458,50 @@\n     \n-var species = par%5B1%5D;\n+// INICIE O ANIMAL UTILIZANDO O CONSTRUTOR\n %0A   \n@@ -516,26 +516,31 @@\n     \n+ //\n  var \n-noise\n+species\n  = par%5B\n-2\n+1\n %5D;%0A \n@@ -558,43 +558,29 @@\n     \n-animal = new Animal(species, noise)\n+// var noise = par%5B2%5D\n ;%0A  \n@@ -655,35 +655,26 @@\n     \n-System.out.println(animal);\n+// MOSTRE O ANIMAL\n %0A   \n@@ -749,47 +749,46 @@\n     \n-System.out.println(animal.makeSound());\n+// OBTER O BARULHO DO ANIMAL E IMPRIMA\n %0A   \n@@ -854,24 +854,72 @@\n             \n+ // AUMENTE A IDADE DO ANIMAL%0A                //\n  var increme\n@@ -965,50 +965,11 @@\n     \n+%7D\n   \n-  animal.ageBy(increment);%0A            %7D\n %0A   \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-08-12_20-21-19",
+            "content": "@@ -430,24 +430,25 @@\n (%22init%22) ) %7B\n+=\n %0A           \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-08-12_20-21-29",
+            "content": "import java.util.Scanner;\n\npublic class Shell {\n\n    public static void main(String[] _args) {\n        Animal animal = new Animal(\"\", \"\");\n\n        while (true) {\n            var line = scanner.nextLine();\n            System.out.println(\"$\" + line);\n\n            var par = line.split(\" \");\n            var cmd = par[0];\n\n            if (cmd.equals(\"end\")  ) { \n                break;\n            }\n            else if (cmd.equals(\"init\") ) {\n                var species = par[1];\n                var noise = par[2];\n                animal = new Animal(species, noise);\n            } \n            else if (cmd.equals(\"show\")) {\n                System.out.println(animal);\n            } \n            else if (cmd.equals(\"noise\")) {\n                System.out.println(animal.makeSound());\n            } \n            else if (cmd.equals(\"grow\") ) {\n                var increment = Integer.parseInt(par[1]);\n                animal.ageBy(increment);\n            }\n            else {\n                System.out.println(\"fail: comando invalido\\n\");\n            }\n        }\n    }\n\n    static Scanner scanner = new Scanner(System.in);\n}\n",
+            "lines": "40"
+        }
+    ]
+}
