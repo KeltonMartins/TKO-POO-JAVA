@@ -9,7 +9,7 @@ class Student {
     public static int count(List<Integer> vet, int value) {
         int count = 0;
         for (Integer i: vet){
-            if (vet.get(i) == value){
+            if (i == value){
                 count++;
             }
         }
@@ -19,15 +19,23 @@ class Student {
     public static int sum(List<Integer> vet) {
         int sum = 0;
         for (Integer i: vet){
-            sum += (i *= -1);
+            if (i < 0){
+                sum += i *= -1;
+            }else{
+                sum += i;
+            }
         }
         return sum;
     }
 
     public static double average(List<Integer> vet) {
-        int sum = 0;
+        double sum = 0;
         for (Integer i: vet){
-            sum += (i *= -1);
+            if (i < 0){
+                sum += i *= -1;
+            }else{
+                sum += i;
+            }
         }
         return sum / vet.size();
     }
@@ -39,7 +47,7 @@ class Student {
                 men++;
             }
         }
-        int women = men - vet.size();
+        int women = vet.size() - men;
         if (women > men){
             return "women";
         }else if(women < men){
@@ -50,11 +58,45 @@ class Student {
     }
 
     public static String halfCompare(List<Integer> vet) {
-        return "";
+        int meio = vet.size() / 2;
+        int[] numeros = new int[2];
+
+        for (int i = 0; i< vet.size(); i++){
+            int valor = vet.get(i);
+            if (valor < 0) valor *= -1;
+
+            if (i < meio) {
+                numeros[0] += valor;
+            } else {
+                numeros[1] += valor;
+            }
+        }
+        if (numeros[0] > numeros[1]){
+            return "first";
+        }else if(numeros[0] < numeros[1]){
+            return "second";
+        }else{
+            return "draw";
+        }
     }
 
     public static String sexBattle(List<Integer> vet) {
-        return "";
+        int men = 0;
+        int women = 0;
+        for (Integer i: vet){
+            if (i < 0){
+                women += i *= -1;
+            }else{
+                men += i;
+            }
+        }
+         if (women > men){
+            return "women";
+        }else if(women < men){
+            return "men";
+        }else{
+            return "draw";
+        }
     }
 }
 

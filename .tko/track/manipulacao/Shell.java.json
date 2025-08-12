@@ -1,0 +1,229 @@
+{
+    "patches": [
+        {
+            "label": "2025-08-08_21-48-17",
+            "content": "@@ -383,17 +383,16 @@\n rn volta\n-;\n %0A    %7D%0A%0A\n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-08-08_21-48-21",
+            "content": "@@ -219,23 +219,19 @@\n rayList%3C\n-I\n+i\n nt\n-eger\n %3E volta \n@@ -246,23 +246,19 @@\n rayList%3C\n-I\n+i\n nt\n-eger\n %3E();%0A   \n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-08-08_21-49-36",
+            "content": "@@ -473,193 +473,32 @@\n     \n-ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A        for (Integer i: vet)%7B%0A            if (i %3C 0)%7B%0A                volta.add(i * -1)%0A            %7D%0A        %7D%0A        return volta\n+return new ArrayList%3C%3E()\n ;%0A  \n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-08-08_21-54-57",
+            "content": "@@ -609,17 +609,16 @@\n (i * -1)\n-;\n %0A       \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-08-08_21-55-23",
+            "content": "@@ -605,17 +605,16 @@\n .add(i *\n-=\n  -1);%0A  \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-08-08_21-56-45",
+            "content": "@@ -595,32 +595,38 @@\n      volta.add(i\n+ *= -1\n );%0A            %7D\n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-08-08_21-56-58",
+            "content": "@@ -596,108 +596,21 @@\n     \n-int max = i *= -1;%0A                if(max %3C 10)%7B%0A                    volta.add(i);%0A                %7D\n+volta.add(i);\n %0A   \n",
+            "lines": "105"
+        },
+        {
+            "label": "2025-08-08_21-58-37",
+            "content": "@@ -672,22 +672,16 @@\n ta.add(i\n- *= -1\n );%0A     \n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-08-08_21-58-57",
+            "content": "@@ -815,376 +815,32 @@\n     \n-ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A        Integer menor = Integer.MAX_VALUE;%0A        for (int i = 0; i%3C vet.size(); i++)%7B%0A            for (int j = 0; j%3C vet.size(); j++)%7B%0A                if (vet.get(j) %3C menor)%7B%0A                    menor = vet.get(j);%0A                %7D%0A            %7D%0A            volta.add(vet.get(i));%0A        %7D%0A        return volta\n+return new ArrayList%3C%3E()\n ;%0A  \n",
+            "lines": "108"
+        },
+        {
+            "label": "2025-08-09_01-46-05",
+            "content": "@@ -838,19 +838,40 @@\n volta = \n-vet\n+new ArrayList%3CInteger%3E()\n ;%0A      \n@@ -1106,32 +1106,67 @@\n %7D%0A            %7D%0A\n+            volta.add(vet.get(i));%0A\n         %7D%0A      \n",
+            "lines": "118"
+        },
+        {
+            "label": "2025-08-09_01-52-49",
+            "content": "@@ -841,50 +841,8 @@\n ta =\n- new ArrayList%3CInteger%3E();%0A        volta =\n  vet\n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-08-09_01-53-28",
+            "content": "@@ -856,32 +856,53 @@\n ist%3CInteger%3E();%0A\n+        volta = vet;%0A\n         Integer \n",
+            "lines": "118"
+        },
+        {
+            "label": "2025-08-09_01-53-40",
+            "content": "@@ -884,16 +884,33 @@\n ger \n-temp = 0\n+menor = Integer.MAX_VALUE\n ;%0A  \n@@ -944,20 +944,16 @@\n t.size()\n- - 1\n ; i++)%7B%0A\n@@ -981,13 +981,9 @@\n j = \n-i + 1\n+0\n ; j%3C\n@@ -1033,23 +1033,18 @@\n get(\n-i) %3E vet.get(j)\n+j) %3C menor\n )%7B%0A \n@@ -1062,20 +1062,21 @@\n         \n-temp\n+menor\n  = vet.g\n@@ -1082,91 +1082,9 @@\n get(\n-i);%0A                    vet.set(i, vet.get(j));%0A                    vet.set(j, temp\n+j\n );%0A \n@@ -1140,18 +1140,20 @@\n return v\n-et\n+olta\n ;%0A    %7D%0A\n",
+            "lines": "117"
+        },
+        {
+            "label": "2025-08-09_01-59-12",
+            "content": "@@ -1298,829 +1298,32 @@\n     \n-ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A        Integer temp = 0;%0A        for (int i = 0; i%3C vet.size() - 1; i++)%7B%0A            for (int j = i + 1; j%3C vet.size(); j++)%7B%0A                if (vet.get(j) %3C 0)%7B%0A                    int max = i *= -1;%0A                    if(max %3C 10)%7B%0A                        if (vet.get(i) %3E vet.get(j))%7B%0A                            temp = vet.get(i);%0A                            vet.set(i, vet.get(j));%0A                            vet.set(j, temp);%0A                            continue;%0A                        %7D%0A                    %7D%0A                %7D%0A                if (vet.get(i) %3E vet.get(j))%7B%0A                    temp = vet.get(i);%0A                    vet.set(i, vet.get(j));%0A                    vet.set(j, temp);%0A                %7D%0A            %7D%0A        %7D%0A        return vet\n+return new ArrayList%3C%3E()\n ;%0A  \n",
+            "lines": "119"
+        },
+        {
+            "label": "2025-08-09_02-08-14",
+            "content": "@@ -1467,32 +1467,445 @@\n t.size(); j++)%7B%0A\n+                if (vet.get(j) %3C 0)%7B%0A                    int max = i *= -1;%0A                    if(max %3C 10)%7B%0A                        if (vet.get(i) %3E vet.get(j))%7B%0A                            temp = vet.get(i);%0A                            vet.set(i, vet.get(j));%0A                            vet.set(j, temp);%0A                            continue;%0A                        %7D%0A                    %7D%0A                %7D%0A\n                 \n",
+            "lines": "141"
+        },
+        {
+            "label": "2025-08-10_00-51-50",
+            "content": "@@ -894,34 +894,8 @@\n  0;%0A\n-        int a = 0, b = 0;%0A\n     \n@@ -1027,648 +1027,141 @@\n (i) \n-%3C 0)%7B%0A                    vet.set(i, vet.get(i)*= -1);%0A                    a = 1;%0A                %7D%0A                if (vet.get(j) %3C 0)%7B%0A                    vet.set(j, vet.get(j)*= -1);%0A                    b = 1;%0A                %7D%0A                if (vet.get(i) %3E vet.get(j))%7B%0A                    temp = vet.get(i);%0A                    vet.set(i, vet.get(j));%0A                    vet.set(j, temp);%0A                %7D%0A%0A                if (a = 1)%7B%0A                    a = 0;%0A                    vet.set(j, vet.get(j)*= -1);%0A                %7D%0A                if (b = 1)%7B%0A                    b = 0;%0A                    vet.set(i, vet.get(i)*= -1\n+%3E vet.get(j))%7B%0A                    temp = vet.get(i);%0A                    vet.set(i, vet.get(j));%0A                    vet.set(j, temp\n );%0A \n",
+            "lines": "130"
+        },
+        {
+            "label": "2025-08-10_01-01-34",
+            "content": "@@ -1552,17 +1552,16 @@\n .set(j, \n-(\n vet.get(\n@@ -1564,25 +1564,24 @@\n get(j)*= -1)\n-)\n ;%0A          \n@@ -1674,17 +1674,16 @@\n .set(i, \n-(\n vet.get(\n@@ -1690,17 +1690,16 @@\n i)*= -1)\n-)\n ;%0A      \n",
+            "lines": "148"
+        },
+        {
+            "label": "2025-08-10_01-02-13",
+            "content": "@@ -795,32 +795,93 @@\n Integer%3E vet) %7B%0A\n+        ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A\n         Integer \n@@ -916,17 +916,16 @@\n  b = 0;%0A\n-%0A\n         \n",
+            "lines": "148"
+        },
+        {
+            "label": "2025-08-10_01-04-24",
+            "content": "@@ -1033,24 +1033,25 @@\n  vet.get(i)*\n+=\n  -1);%0A      \n@@ -1164,24 +1164,25 @@\n  vet.get(j)*\n+=\n  -1);%0A      \n@@ -1504,16 +1504,17 @@\n .get(j)*\n+=\n  -1));%0A \n@@ -1628,16 +1628,17 @@\n .get(i)*\n+=\n  -1));%0A \n",
+            "lines": "148"
+        },
+        {
+            "label": "2025-08-10_01-04-40",
+            "content": "@@ -1427,17 +1427,16 @@\n  if (a =\n-=\n  1)%7B%0A   \n@@ -1550,17 +1550,16 @@\n  if (b =\n-=\n  1)%7B%0A   \n",
+            "lines": "148"
+        },
+        {
+            "label": "2025-08-10_01-04-50",
+            "content": "@@ -1483,32 +1483,33 @@\n      vet.set(j, \n+(\n vet.get(j)* -1);\n@@ -1499,32 +1499,33 @@\n (vet.get(j)* -1)\n+)\n ;%0A              \n@@ -1607,32 +1607,33 @@\n      vet.set(i, \n+(\n vet.get(i) * -1)\n@@ -1630,14 +1630,14 @@\n t(i)\n- \n * -1)\n+)\n ;%0A  \n",
+            "lines": "148"
+        },
+        {
+            "label": "2025-08-10_01-05-07",
+            "content": "@@ -807,491 +807,8 @@\n ) %7B%0A\n-        ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A        Integer temp = 0;%0A        for (int i = 0; i%3C vet.size() - 1; i++)%7B%0A            for (int j = i + 1; j%3C vet.size(); j++)%7B%0A                if (vet.get(i) %3E vet.get(j))%7B%0A                    temp = vet.get(i);%0A                    vet.set(i, vet.get(j));%0A                    vet.set(j, temp);%0A                %7D%0A            %7D%0A        %7D%0A        return vet;%0A    %7D%0A%0A    static List%3CInteger%3E sort_stress(List%3CInteger%3E vet) %7B%0A\n     \n@@ -1692,32 +1692,515 @@\n urn vet;%0A    %7D%0A%0A\n+    static List%3CInteger%3E sort_stress(List%3CInteger%3E vet) %7B%0A        ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A        Integer temp = 0;%0A        for (int i = 0; i%3C vet.size() - 1; i++)%7B%0A            for (int j = i + 1; j%3C vet.size(); j++)%7B%0A                if (vet.get(i) %3E vet.get(j))%7B%0A                    temp = vet.get(i);%0A                    vet.set(i, vet.get(j));%0A                    vet.set(j, temp);%0A                %7D%0A            %7D%0A        %7D%0A        return vet;%0A    %7D%0A%0A\n     static List%3C\n",
+            "lines": "148"
+        },
+        {
+            "label": "2025-08-10_01-09-48",
+            "content": "@@ -1908,32 +1908,59 @@\n    if (a == 1)%7B%0A\n+                    a = 0;%0A\n                 \n@@ -2003,34 +2003,25 @@\n             \n-    a = 0;\n+%7D\n %0A           \n@@ -2017,33 +2017,44 @@\n                 \n-%7D\n+if (b == 1)%7B\n %0A               \n@@ -2050,36 +2050,34 @@\n             \n-if (b == 1)%7B\n+    b = 0;\n %0A           \n@@ -2118,35 +2118,8 @@\n 1);%0A\n-                    b = 0;%0A\n     \n",
+            "lines": "148"
+        },
+        {
+            "label": "2025-08-10_01-10-26",
+            "content": "@@ -1329,11 +1329,19 @@\n nt a\n-, b\n+ = 0, b = 0\n ;%0A%0A \n@@ -1445,54 +1445,8 @@\n +)%7B%0A\n-                a = 0;%0A                b = 0;%0A\n     \n@@ -1693,33 +1693,32 @@\n               %7D%0A\n-%0A\n                 \n",
+            "lines": "148"
+        },
+        {
+            "label": "2025-08-10_01-11-02",
+            "content": "@@ -1995,32 +1995,59 @@\n et.get(j)* -1);%0A\n+                    a = 0;%0A\n                 \n@@ -2122,24 +2122,51 @@\n t(i) * -1);%0A\n+                    b = 0;%0A\n             \n",
+            "lines": "151"
+        },
+        {
+            "label": "2025-08-10_01-11-16",
+            "content": "@@ -1329,19 +1329,11 @@\n nt a\n- = 0, b = 0\n+, b\n ;%0A%0A \n@@ -1425,32 +1425,78 @@\n t.size(); j++)%7B%0A\n+                a = 0;%0A                b = 0;%0A\n                 \n@@ -1743,25 +1743,9 @@\n   %7D%0A\n-                \n %0A\n+\n     \n@@ -2007,35 +2007,8 @@\n 1);%0A\n-                    a = 0;%0A\n     \n@@ -2042,32 +2042,32 @@\n    if (b == 1)%7B%0A\n+\n                 \n@@ -2103,35 +2103,8 @@\n 1);%0A\n-                    b = 0;%0A\n     \n",
+            "lines": "149"
+        },
+        {
+            "label": "2025-08-10_01-11-39",
+            "content": "@@ -1964,33 +1964,33 @@\n .set(j, vet.get(\n-i\n+j\n )* -1);%0A        \n@@ -2094,17 +2094,17 @@\n vet.get(\n-j\n+i\n ) * -1);\n",
+            "lines": "149"
+        },
+        {
+            "label": "2025-08-10_13-46-32",
+            "content": "@@ -1964,33 +1964,33 @@\n .set(j, vet.get(\n-j\n+i\n )* -1);%0A        \n@@ -2094,17 +2094,17 @@\n vet.get(\n-i\n+j\n ) * -1);\n",
+            "lines": "149"
+        },
+        {
+            "label": "2025-08-10_13-46-42",
+            "content": "@@ -1231,16 +1231,17 @@\n   %7D%0A%0A   \n+ \n static L\n@@ -1282,24 +1282,28 @@\n ger%3E vet) %7B%0A\n+    \n     Integer \n@@ -1308,24 +1308,28 @@\n r temp = 0;%0A\n+    \n     int a = \n@@ -1347,54 +1347,8 @@\n     \n-System.out.println(%22Vetor inicial: %22 + vet);%0A%0A\n     \n@@ -1364,17 +1364,16 @@\n i = 0; i\n- \n %3C vet.si\n@@ -1386,17 +1386,16 @@\n  1; i++)\n- \n %7B%0A      \n@@ -1388,32 +1388,36 @@\n ; i++)%7B%0A        \n+ \n+   \n for (int j = i +\n@@ -1421,17 +1421,16 @@\n i + 1; j\n- \n %3C vet.si\n@@ -1439,17 +1439,16 @@\n (); j++)\n- \n %7B%0A      \n@@ -1457,70 +1457,8 @@\n     \n-%0A            // Checa e inverte sinal temporariamente%0A        \n     \n@@ -1472,25 +1472,24 @@\n .get(i) %3C 0)\n- \n %7B%0A          \n@@ -1486,32 +1486,36 @@\n                 \n+    \n vet.set(i, vet.g\n@@ -1515,32 +1515,35 @@\n , vet.get(i)\n- \n * -1);%0A\n+    \n             \n@@ -1573,60 +1573,9 @@\n     \n-System.out.println(%22Inverti i=%22 + i + %22 -%3E %22 + vet);\n+%7D\n %0A   \n@@ -1580,33 +1580,23 @@\n         \n-   %7D%0A\n        \n-     \n if (vet.\n@@ -1606,19 +1606,22 @@\n (j) %3C 0)\n- \n %7B%0A\n+    \n         \n@@ -1645,32 +1645,35 @@\n , vet.get(j)\n- \n * -1);%0A\n+    \n             \n@@ -1703,110 +1703,31 @@\n     \n-System.out.println(%22Inverti j=%22 + j + %22 -%3E %22 + vet);%0A            %7D%0A%0A            // Compara%C3%A7%C3%A3o e troca%0A\n+%7D%0A                %0A    \n     \n@@ -1762,17 +1762,16 @@\n .get(j))\n- \n %7B%0A      \n@@ -1772,32 +1772,36 @@\n                 \n+ \n+   \n temp = vet.get(i\n@@ -1811,32 +1811,36 @@\n                 \n+  \n+  \n vet.set(i, vet.g\n@@ -1839,32 +1839,36 @@\n i, vet.get(j));%0A\n+    \n                 \n@@ -1905,123 +1905,15 @@\n     \n-System.out.println(%22Troquei i=%22 + i + %22 com j=%22 + j + %22 -%3E %22 + vet);%0A            %7D%0A%0A            // Restaura sinais%0A\n+%7D%0A%0A    \n     \n@@ -1927,25 +1927,24 @@\n  if (a == 1)\n- \n %7B%0A          \n@@ -1941,32 +1941,36 @@\n                 \n+    \n vet.set(j, vet.g\n@@ -1974,17 +1974,16 @@\n t.get(j)\n- \n * -1);%0A \n@@ -2001,109 +2001,41 @@\n     \n-System.out.println(%22Restaurei sinal de j=%22 + j + %22 -%3E %22 + vet);%0A                a = 0;%0A            %7D%0A\n+    a = 0;%0A                %7D%0A    \n     \n@@ -2053,19 +2053,22 @@\n (b == 1)\n- \n %7B%0A\n+    \n         \n@@ -2124,70 +2124,17 @@\n     \n-System.out.println(%22Restaurei sinal de i=%22 + i + %22 -%3E %22 + vet)\n+    b = 0\n ;%0A  \n@@ -2139,38 +2139,33 @@\n                 \n-b = 0;\n+%7D\n %0A            %7D%0A \n@@ -2181,75 +2181,29 @@\n     \n-%7D%0A\n     \n-System.out.println(%22Vetor final: %22 +\n+return\n  vet\n-)\n ;%0A    \n-return vet;%0A%7D%0A\n+%7D\n %0A%0A  \n",
+            "lines": "149"
+        },
+        {
+            "label": "2025-08-10_13-48-55",
+            "content": "@@ -1223,33 +1223,32 @@\n  vet;%0A    %7D%0A%0A   \n- \n static List%3CInte\n@@ -1281,28 +1281,24 @@\n ger%3E vet) %7B%0A\n-    \n     Integer \n@@ -1307,21 +1307,39 @@\n mp = 0;%0A\n-%0A\n     \n+int a = 0, b = 0;%0A%0A\n     Syst\n@@ -1380,28 +1380,24 @@\n  vet);%0A%0A    \n-   \n- \n for (int i =\n@@ -1423,28 +1423,24 @@\n - 1; i++) %7B%0A\n-    \n         for \n@@ -1478,17 +1478,17 @@\n  j++) %7B%0A\n-%0A\n+ \n         \n@@ -1494,88 +1494,123 @@\n     \n+%0A      \n      \n+ \n // \n-Usa valor absoluto s%C3%B3 para comparar%0A                int absI = Math.abs(\n+Checa e inverte sinal temporariamente%0A            if (vet.get(i) %3C 0) %7B%0A                vet.set(i, \n vet.\n@@ -1615,16 +1615,21 @@\n t.get(i)\n+ * -1\n );%0A     \n@@ -1643,81 +1643,361 @@\n     \n-int absJ = Math.abs(vet.get(j));%0A%0A                if (absI %3E absJ) %7B%0A    \n+a = 1;%0A                System.out.println(%22Inverti i=%22 + i + %22 -%3E %22 + vet);%0A            %7D%0A            if (vet.get(j) %3C 0) %7B%0A                vet.set(j, vet.get(j) * -1);%0A                b = 1;%0A                System.out.println(%22Inverti j=%22 + j + %22 -%3E %22 + vet);%0A            %7D%0A%0A            // Compara%C3%A7%C3%A3o e troca%0A            if (vet.get(i) %3E vet.get(j)) %7B%0A\n     \n@@ -2035,36 +2035,32 @@\n                 \n-  \n-  \n vet.set(i, vet.g\n@@ -2075,36 +2075,32 @@\n                 \n-    \n vet.set(j, temp)\n@@ -2093,36 +2093,32 @@\n t.set(j, temp);%0A\n-    \n                 \n@@ -2202,47 +2202,124 @@\n     \n+%7D%0A%0A\n     \n-%7D%0A            %7D%0A        %7D%0A%0A\n+        // Restaura sinais%0A            if (a == 1) %7B%0A                vet.set(j, vet.get(j) * -1);%0A   \n         \n Syst\n@@ -2306,32 +2306,37 @@\n -1);%0A           \n+     \n System.out.print\n@@ -2343,57 +2343,357 @@\n ln(%22\n-Vetor final: %22 + vet);%0A        return\n+Restaurei sinal de j=%22 + j + %22 -%3E %22 + vet);%0A                a = 0;%0A            %7D%0A            if (b == 1) %7B%0A                vet.set(i, vet.get(i) * -1);%0A                System.out.println(%22Restaurei sinal de i=%22 + i + %22 -%3E %22 +\n  vet\n+)\n ;%0A    \n+            b = 0;%0A            %7D%0A        %7D%0A    %7D%0A    System.out.println(%22Vetor final: %22 + vet);%0A    return vet;%0A\n %7D\n-%0A\n %0A%0A%0A \n",
+            "lines": "162"
+        },
+        {
+            "label": "2025-08-10_13-51-57",
+            "content": "@@ -1313,16 +1313,70 @@\n p = 0;%0A%0A\n+        System.out.println(%22Vetor inicial: %22 + vet);%0A%0A\n         \n@@ -1474,16 +1474,71 @@\n j++) %7B%0A%0A\n+                // Usa valor absoluto s%C3%B3 para comparar%0A\n         \n@@ -1804,33 +1804,174 @@\n     \n-%7D%0A            %7D%0A        %7D\n+    System.out.println(%22Troquei i=%22 + i + %22 com j=%22 + j + %22 -%3E %22 + vet);%0A                %7D%0A            %7D%0A        %7D%0A%0A        System.out.println(%22Vetor final: %22 + vet);\n %0A   \n",
+            "lines": "142"
+        },
+        {
+            "label": "2025-08-10_13-52-22",
+            "content": "@@ -1444,12 +1444,24 @@\n int \n+abs\n I = \n+Math.abs(\n vet.\n@@ -1466,21 +1466,17 @@\n t.get(i)\n- * -1\n+)\n ;%0A      \n@@ -1489,20 +1489,32 @@\n     int \n-j = \n+absJ = Math.abs(\n vet.get(\n@@ -1519,13 +1519,9 @@\n t(j)\n- * -1\n+)\n ;%0A%0A \n",
+            "lines": "136"
+        },
+        {
+            "label": "2025-08-10_13-53-23",
+            "content": "@@ -1527,13 +1527,19 @@\n if (\n-i %3E j\n+absI %3E absJ\n ) %7B%0A\n",
+            "lines": "136"
+        },
+        {
+            "label": "2025-08-10_13-53-35",
+            "content": "@@ -1527,13 +1527,13 @@\n if (\n-I %3E J\n+i %3E j\n ) %7B%0A\n",
+            "lines": "136"
+        },
+        {
+            "label": "2025-08-10_13-53-49",
+            "content": "@@ -1444,17 +1444,16 @@\n int I = \n-(\n vet.get(\n@@ -1459,17 +1459,16 @@\n (i) * -1\n-)\n ;%0A      \n@@ -1485,17 +1485,16 @@\n int j = \n-(\n vet.get(\n@@ -1500,17 +1500,16 @@\n (j) * -1\n-)\n ;%0A%0A     \n",
+            "lines": "136"
+        },
+        {
+            "label": "2025-08-10_13-54-19",
+            "content": "@@ -1440,19 +1440,16 @@\n     int \n-abs\n I = (vet\n@@ -1483,20 +1483,17 @@\n     int \n-absJ\n+j\n  = (vet.\n@@ -1531,18 +1531,12 @@\n if (\n-abs\n I %3E \n-abs\n J) %7B\n",
+            "lines": "136"
+        },
+        {
+            "label": "2025-08-10_13-54-53",
+            "content": "@@ -1447,24 +1447,16 @@\n  absI = \n-Math.abs\n (vet.get\n@@ -1458,16 +1458,21 @@\n t.get(i)\n+ * -1\n );%0A     \n@@ -1497,16 +1497,8 @@\n J = \n-Math.abs\n (vet\n@@ -1504,16 +1504,21 @@\n t.get(j)\n+ * -1\n );%0A%0A    \n",
+            "lines": "136"
+        },
+        {
+            "label": "2025-08-10_13-55-38",
+            "content": "@@ -1812,354 +1812,98 @@\n     \n-ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A%0A        for (int i = vet.size()-1; i %3E 0; i--)%7B%0A            volta.add(vet.get(i));%0A        %7D%0A        return volta;%0A    %7D%0A%0A    static boolean exists(List%3CInteger%3E vet, int value) %7B%0A        for (Integer i : vet)%7B%0A            if (i == value)%7B%0A                return true;%0A            %7D%0A        %7D\n+return new ArrayList%3C%3E();%0A    %7D%0A%0A    static boolean exists(List%3CInteger%3E vet, int value) %7B\n %0A   \n",
+            "lines": "136"
+        },
+        {
+            "label": "2025-08-10_14-00-36",
+            "content": "@@ -1893,16 +1893,18 @@\n t.size()\n+-1\n ; i %3E 0;\n",
+            "lines": "146"
+        },
+        {
+            "label": "2025-08-10_14-00-53",
+            "content": "@@ -1893,18 +1893,16 @@\n t.size()\n--1\n ; i %3E 0;\n",
+            "lines": "146"
+        },
+        {
+            "label": "2025-08-10_14-00-58",
+            "content": "@@ -1900,17 +1900,16 @@\n )-1; i %3E\n-=\n  0; i--)\n",
+            "lines": "146"
+        },
+        {
+            "label": "2025-08-10_14-01-15",
+            "content": "@@ -2250,247 +2250,32 @@\n     \n-ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A%0A        for (Integer i : vet)%7B%0A            if (exists(volta, i))%7B%0A                continue;%0A            %7Delse%7B%0A                volta.add(i);%0A            %7D%0A        %7D%0A        return volta\n+return new ArrayList%3C%3E()\n ;%0A  \n",
+            "lines": "146"
+        },
+        {
+            "label": "2025-08-10_14-04-22",
+            "content": "@@ -2561,261 +2561,32 @@\n     \n-ArrayList%3CInteger%3E volta = new ArrayList%3CInteger%3E();%0A        for (int i = 0; i %3C vet.size(); i++)%7B%0A            int value = vet.remove(0);%0A            if (exists(vet, value))%7B%0A                volta.add(value);%0A            %7D%0A        %7D%0A        return volta\n+return new ArrayList%3C%3E()\n ;%0A  \n",
+            "lines": "155"
+        },
+        {
+            "label": "2025-08-10_17-15-13",
+            "content": "@@ -2809,19 +2809,13 @@\n urn \n-sort(\n volta\n-)\n ;%0A  \n",
+            "lines": "162"
+        },
+        {
+            "label": "2025-08-10_17-17-41",
+            "content": "import java.util.Arrays;\nimport java.util.ArrayList;\nimport java.util.Collections;\nimport java.util.List;\nimport java.util.Scanner;\n\npublic class Shell {\n    static List<Integer> get_men(List<Integer> vet) {\n        ArrayList<Integer> volta = new ArrayList<Integer>();\n        for (Integer i : vet){\n            if (i > 0){\n                volta.add(i);\n            }\n        }\n        return volta;\n    }\n\n    static List<Integer> get_calm_women(List<Integer> vet) {\n        ArrayList<Integer> volta = new ArrayList<Integer>();\n        for (Integer i: vet){\n            if (i < 0){\n                int max = i *= -1;\n                if(max < 10){\n                    volta.add(i *= -1);\n                }\n            }\n        }\n        return volta;\n    }\n\n    static List<Integer> sort(List<Integer> vet) {\n        ArrayList<Integer> volta = new ArrayList<Integer>();\n        Integer temp = 0;\n        for (int i = 0; i< vet.size() - 1; i++){\n            for (int j = i + 1; j< vet.size(); j++){\n                if (vet.get(i) > vet.get(j)){\n                    temp = vet.get(i);\n                    vet.set(i, vet.get(j));\n                    vet.set(j, temp);\n                }\n            }\n        }\n        return vet;\n    }\n\n    static List<Integer> sort_stress(List<Integer> vet) {\n        Integer temp = 0;\n\n        for (int i = 0; i < vet.size() - 1; i++) {\n            for (int j = i + 1; j < vet.size(); j++) {\n\n                int absI = Math.abs(vet.get(i));\n                int absJ = Math.abs(vet.get(j));\n\n                if (absI > absJ) {\n                    temp = vet.get(i);\n                    vet.set(i, vet.get(j));\n                    vet.set(j, temp);\n                }\n            }\n        }\n        return vet;\n    }\n\n\n\n    static List<Integer> reverse(List<Integer> vet) {\n        ArrayList<Integer> volta = new ArrayList<Integer>();\n\n        for (int i = vet.size()-1; i >= 0; i--){\n            volta.add(vet.get(i));\n        }\n        return volta;\n    }\n\n    static boolean exists(List<Integer> vet, int value) {\n        for (Integer i : vet){\n            if (i == value){\n                return true;\n            }\n        }\n        return false;\n    }\n\n    static List<Integer> unique(List<Integer> vet) {\n        ArrayList<Integer> volta = new ArrayList<Integer>();\n\n        for (Integer i : vet){\n            if (exists(volta, i)){\n                continue;\n            }else{\n                volta.add(i);\n            }\n        }\n        return volta;\n    }\n\n    static List<Integer> repeated(List<Integer> vet) {\n        ArrayList<Integer> volta = new ArrayList<Integer>();\n        for (int i = 0; i < vet.size(); i++){\n            int value = vet.remove(0);\n            if (exists(vet, value)){\n                volta.add(value);\n            }\n        }\n        return sort(volta);\n    }\n\n    public static void main(String[] _args) {\n        while (true) {\n            var line = scanner.nextLine();\n            var args = line.split(\" \");\n            var cmd = args[0];\n            System.out.println(\"$\" + line);\n\n            if (cmd.equals(\"end\")) {\n                break;\n            } else if (cmd.equals(\"get_men\")) {\n                var array = strToVet(args[1]);\n                System.out.println(\"\" + get_men(array));\n            } else if (cmd.equals(\"get_calm_women\")) {\n                var array = strToVet(args[1]);\n                System.out.println(\"\" + get_calm_women(array));\n            } else if (cmd.equals(\"sort\")) {\n                var array = strToVet(args[1]);\n                System.out.println(\"\" + sort(array));\n            } else if (cmd.equals(\"sort_stress\")) {\n                var array = strToVet(args[1]);\n                System.out.println(\"\" + sort_stress(array));\n            } else if (cmd.equals(\"reverse\")) {\n                var array = strToVet(args[1]);\n                var other = reverse(array);\n                System.out.println(\"\" + array);\n                System.out.println(\"\" + other);\n            } else if (cmd.equals(\"exists\")) {\n                var array = strToVet(args[1]);\n                var value = Integer.parseInt(args[2]);\n                System.out.println(\"\" + exists(array, value));\n            } else if (cmd.equals(\"unique\")) {\n                var array = strToVet(args[1]);\n                System.out.println(\"\" + unique(array));\n            } else if (cmd.equals(\"repeated\")) {\n                var array = strToVet(args[1]);\n                System.out.println(\"\" + repeated(array));\n            } else {\n                System.out.println(\"Invalid command\");\n            }\n        }\n    }\n\n    public static List<Integer> strToVet(String s) {\n        if (s.equals(\"[]\"))\n            return new ArrayList<>();\n        List<String> parts = Arrays.asList(s.substring(1, s.length() - 1).split(\",\"));\n        List<Integer> result = new ArrayList<>();\n        for (String part : parts)\n            result.add(Integer.parseInt(part.trim()));\n        return result;\n    }\n\n    static Scanner scanner = new Scanner(System.in);\n}\n",
+            "lines": "162"
+        }
+    ]
+}

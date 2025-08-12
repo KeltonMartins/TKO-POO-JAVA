@@ -1,0 +1,81 @@
+2025-08-10 00:46:18, MOVE, v:1, k:manipulacao, mode:PICK
+2025-08-10 00:46:28, EXEC, v:1, k:manipulacao, mode:FULL, rate:42
+2025-08-10 00:51:50, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:130
+2025-08-10 01:01:34, EXEC, v:1, k:manipulacao, mode:LOCK, size:148, fail:COMP
+2025-08-10 01:01:36, EXEC, v:1, k:manipulacao, mode:LOCK, fail:COMP
+2025-08-10 01:02:13, EXEC, v:1, k:manipulacao, mode:LOCK, size:148, fail:COMP
+2025-08-10 01:02:15, EXEC, v:1, k:manipulacao, mode:LOCK, fail:COMP
+2025-08-10 01:04:24, EXEC, v:1, k:manipulacao, mode:LOCK, size:148, fail:COMP
+2025-08-10 01:04:40, EXEC, v:1, k:manipulacao, mode:LOCK, size:148, fail:COMP
+2025-08-10 01:04:50, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:148
+2025-08-10 01:05:07, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:148
+2025-08-10 01:09:48, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:148
+2025-08-10 01:09:51, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0
+2025-08-10 01:10:26, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:148
+2025-08-10 01:11:02, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:151
+2025-08-10 01:11:16, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:149
+2025-08-10 01:11:36, MOVE, v:1, k:manipulacao, mode:PICK
+2025-08-10 01:11:39, EXEC, v:1, k:manipulacao, mode:FULL, rate:42, size:149
+2025-08-10 12:48:58, MOVE, v:1, k:manipulacao, mode:PICK
+2025-08-10 12:49:06, EXEC, v:1, k:manipulacao, mode:FULL, rate:42
+2025-08-10 13:45:58, MOVE, v:1, k:manipulacao, mode:PICK
+2025-08-10 13:46:32, EXEC, v:1, k:manipulacao, mode:FULL, rate:42, size:149
+2025-08-10 13:46:42, EXEC, v:1, k:manipulacao, mode:FULL, rate:42, size:149
+2025-08-10 13:48:56, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:162
+2025-08-10 13:51:57, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:142
+2025-08-10 13:52:22, EXEC, v:1, k:manipulacao, mode:LOCK, rate:100, size:136
+2025-08-10 13:53:23, EXEC, v:1, k:manipulacao, mode:LOCK, size:136, fail:COMP
+2025-08-10 13:53:24, EXEC, v:1, k:manipulacao, mode:LOCK, fail:COMP
+2025-08-10 13:53:35, EXEC, v:1, k:manipulacao, mode:LOCK, size:136, fail:COMP
+2025-08-10 13:53:49, EXEC, v:1, k:manipulacao, mode:LOCK, size:136, fail:COMP
+2025-08-10 13:54:19, EXEC, v:1, k:manipulacao, mode:LOCK, size:136, fail:COMP
+2025-08-10 13:54:21, EXEC, v:1, k:manipulacao, mode:LOCK, fail:COMP
+2025-08-10 13:54:53, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:136
+2025-08-10 13:55:38, EXEC, v:1, k:manipulacao, mode:LOCK, rate:100, size:136
+2025-08-10 14:00:36, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:146
+2025-08-10 14:00:53, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:146
+2025-08-10 14:00:58, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:146
+2025-08-10 14:01:15, EXEC, v:1, k:manipulacao, mode:LOCK, rate:100, size:146
+2025-08-10 14:04:22, EXEC, v:1, k:manipulacao, mode:LOCK, rate:100, size:155
+2025-08-10 16:49:18, MOVE, v:1, k:manipulacao, mode:PICK
+2025-08-10 17:15:13, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:162
+2025-08-10 17:17:41, EXEC, v:1, k:manipulacao, mode:LOCK, rate:100, size:162
+2025-08-10 17:17:45, EXEC, v:1, k:manipulacao, mode:FULL, rate:100
+2025-08-10 17:17:58, MOVE, v:1, k:manipulacao, mode:BACK
+2025-08-10 17:18:02, SELF, v:1, k:manipulacao, rate:100, flow:6, edge:5
+2025-08-10 17:18:55, MOVE, v:1, k:especiais, mode:DOWN
+2025-08-10 17:18:56, MOVE, v:1, k:especiais, mode:PICK
+2025-08-10 17:56:02, EXEC, v:1, k:especiais, mode:LOCK, size:128, fail:COMP
+2025-08-10 17:56:18, EXEC, v:1, k:especiais, mode:LOCK, size:128, fail:COMP
+2025-08-10 17:57:49, EXEC, v:1, k:especiais, mode:LOCK, size:128, fail:COMP
+2025-08-10 18:28:42, EXEC, v:1, k:especiais, mode:LOCK, size:128, fail:COMP
+2025-08-10 18:28:51, EXEC, v:1, k:especiais, mode:LOCK, size:128, fail:COMP
+2025-08-10 18:29:03, EXEC, v:1, k:especiais, mode:LOCK, size:128, fail:COMP
+2025-08-10 21:08:27, MOVE, v:1, k:especiais, mode:PICK
+2025-08-10 22:34:28, MOVE, v:1, k:especiais, mode:PICK
+2025-08-10 23:11:37, EXEC, v:1, k:especiais, mode:LOCK, size:143, fail:COMP
+2025-08-10 23:11:54, EXEC, v:1, k:especiais, mode:LOCK, size:143, fail:COMP
+2025-08-10 23:11:56, EXEC, v:1, k:especiais, mode:LOCK, fail:COMP
+2025-08-10 23:12:00, EXEC, v:1, k:especiais, mode:LOCK, fail:COMP
+2025-08-10 23:12:03, EXEC, v:1, k:especiais, mode:LOCK, size:143, fail:COMP
+2025-08-10 23:12:31, EXEC, v:1, k:especiais, mode:LOCK, rate:0, size:143
+2025-08-10 23:14:22, EXEC, v:1, k:especiais, mode:LOCK, size:144, fail:COMP
+2025-08-10 23:14:30, EXEC, v:1, k:especiais, mode:LOCK, size:144, fail:COMP
+2025-08-10 23:14:55, EXEC, v:1, k:especiais, mode:LOCK, size:144, fail:COMP
+2025-08-10 23:15:01, EXEC, v:1, k:especiais, mode:LOCK, size:144, fail:COMP
+2025-08-10 23:15:29, EXEC, v:1, k:especiais, mode:LOCK, rate:0, size:144
+2025-08-10 23:15:32, EXEC, v:1, k:especiais, mode:LOCK, rate:0
+2025-08-10 23:18:06, EXEC, v:1, k:especiais, mode:LOCK, size:146, fail:COMP
+2025-08-10 23:18:08, EXEC, v:1, k:especiais, mode:LOCK, fail:COMP
+2025-08-10 23:29:06, EXEC, v:1, k:especiais, mode:LOCK, size:158, fail:COMP
+2025-08-10 23:30:50, EXEC, v:1, k:especiais, mode:LOCK, size:160, fail:COMP
+2025-08-10 23:31:30, EXEC, v:1, k:especiais, mode:LOCK, size:160, fail:COMP
+2025-08-10 23:32:18, EXEC, v:1, k:especiais, mode:LOCK, size:160, fail:COMP
+2025-08-10 23:32:27, EXEC, v:1, k:especiais, mode:LOCK, size:159, fail:COMP
+2025-08-10 23:35:17, EXEC, v:1, k:especiais, mode:LOCK, size:161, fail:COMP
+2025-08-10 23:35:21, EXEC, v:1, k:especiais, mode:LOCK, fail:COMP
+2025-08-10 23:35:45, EXEC, v:1, k:especiais, mode:LOCK, size:161, fail:COMP
+2025-08-10 23:36:22, EXEC, v:1, k:especiais, mode:LOCK, size:162, fail:COMP
+2025-08-10 23:36:24, EXEC, v:1, k:especiais, mode:LOCK, fail:COMP
+2025-08-10 23:36:26, EXEC, v:1, k:especiais, mode:LOCK, fail:COMP
+2025-08-10 23:36:28, EXEC, v:1, k:especiais, mode:LOCK, rate:100, size:162

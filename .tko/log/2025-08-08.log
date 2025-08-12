@@ -1,0 +1,49 @@
+2025-08-08 02:19:01, MOVE, v:1, k:contagem, mode:PICK
+2025-08-08 02:19:07, EXEC, v:1, k:contagem, mode:FULL, rate:0
+2025-08-08 02:19:24, EXEC, v:1, k:contagem, mode:LOCK, rate:0
+2025-08-08 02:23:29, EXEC, v:1, k:contagem, mode:LOCK, rate:0, size:116
+2025-08-08 02:23:31, EXEC, v:1, k:contagem, mode:LOCK, rate:0
+2025-08-08 02:24:29, EXEC, v:1, k:contagem, mode:LOCK, rate:0, size:118
+2025-08-08 02:24:39, EXEC, v:1, k:contagem, mode:LOCK, size:119, fail:COMP
+2025-08-08 02:24:49, EXEC, v:1, k:contagem, mode:LOCK, rate:100, size:120
+2025-08-08 02:26:37, EXEC, v:1, k:contagem, mode:LOCK, rate:0
+2025-08-08 02:28:54, EXEC, v:1, k:contagem, mode:LOCK, rate:0, size:124
+2025-08-08 02:29:07, EXEC, v:1, k:contagem, mode:LOCK, rate:100, size:124
+2025-08-08 02:29:14, EXEC, v:1, k:contagem, mode:LOCK, rate:0
+2025-08-08 02:38:27, EXEC, v:1, k:contagem, mode:LOCK, rate:100, size:124
+2025-08-08 02:38:41, EXEC, v:1, k:contagem, mode:LOCK, rate:0
+2025-08-08 03:10:54, EXEC, v:1, k:contagem, mode:LOCK, size:144, fail:COMP
+2025-08-08 03:11:08, EXEC, v:1, k:contagem, mode:LOCK, size:144, fail:COMP
+2025-08-08 03:12:19, EXEC, v:1, k:contagem, mode:LOCK, fail:COMP
+2025-08-08 03:12:21, EXEC, v:1, k:contagem, mode:LOCK, fail:COMP
+2025-08-08 03:12:58, EXEC, v:1, k:contagem, mode:LOCK, size:144, fail:COMP
+2025-08-08 03:13:29, EXEC, v:1, k:contagem, mode:LOCK, size:144, fail:COMP
+2025-08-08 03:13:32, EXEC, v:1, k:contagem, mode:LOCK, fail:COMP
+2025-08-08 03:13:46, EXEC, v:1, k:contagem, mode:LOCK, fail:COMP
+2025-08-08 03:15:41, EXEC, v:1, k:contagem, mode:LOCK, fail:COMP
+2025-08-08 03:21:08, EXEC, v:1, k:contagem, mode:LOCK, rate:100, size:143
+2025-08-08 03:21:23, EXEC, v:1, k:contagem, mode:LOCK, rate:0
+2025-08-08 03:21:38, EXEC, v:1, k:contagem, mode:LOCK, rate:0, size:143
+2025-08-08 03:21:51, EXEC, v:1, k:contagem, mode:LOCK, rate:100
+2025-08-08 03:21:56, EXEC, v:1, k:contagem, mode:FULL, rate:83
+2025-08-08 03:28:16, EXEC, v:1, k:contagem, mode:FULL, rate:100, size:158
+2025-08-08 03:29:35, MOVE, v:1, k:contagem, mode:BACK
+2025-08-08 03:29:41, SELF, v:1, k:contagem, rate:100, flow:6, edge:5
+2025-08-08 21:38:02, MOVE, v:1, k:manipulacao, mode:DOWN
+2025-08-08 21:38:04, MOVE, v:1, k:manipulacao, mode:PICK
+2025-08-08 21:48:17, EXEC, v:1, k:manipulacao, mode:LOCK, size:99, fail:COMP
+2025-08-08 21:48:19, EXEC, v:1, k:manipulacao, mode:LOCK, fail:COMP
+2025-08-08 21:48:21, EXEC, v:1, k:manipulacao, mode:LOCK, size:99, fail:COMP
+2025-08-08 21:48:23, EXEC, v:1, k:manipulacao, mode:LOCK, fail:COMP
+2025-08-08 21:48:25, EXEC, v:1, k:manipulacao, mode:LOCK, fail:COMP
+2025-08-08 21:49:36, EXEC, v:1, k:manipulacao, mode:LOCK, rate:100, size:99
+2025-08-08 21:54:57, EXEC, v:1, k:manipulacao, mode:FULL, size:105, fail:COMP
+2025-08-08 21:55:23, EXEC, v:1, k:manipulacao, mode:FULL, rate:14, size:105
+2025-08-08 21:55:25, EXEC, v:1, k:manipulacao, mode:FULL, rate:14
+2025-08-08 21:56:45, EXEC, v:1, k:manipulacao, mode:FULL, rate:14, size:105
+2025-08-08 21:56:58, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:105
+2025-08-08 21:57:00, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0
+2025-08-08 21:57:03, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0
+2025-08-08 21:58:37, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:108
+2025-08-08 21:58:57, EXEC, v:1, k:manipulacao, mode:LOCK, rate:100, size:108
+2025-08-08 21:59:16, EXEC, v:1, k:manipulacao, mode:FULL, rate:28

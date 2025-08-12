@@ -1,0 +1,12 @@
+2025-08-09 01:45:57, MOVE, v:1, k:manipulacao, mode:PICK
+2025-08-09 01:46:05, EXEC, v:1, k:manipulacao, mode:FULL, rate:28, size:118
+2025-08-09 01:46:07, EXEC, v:1, k:manipulacao, mode:FULL, rate:28
+2025-08-09 01:52:49, EXEC, v:1, k:manipulacao, mode:FULL, size:117, fail:COMP
+2025-08-09 01:52:55, MOVE, v:1, k:manipulacao, mode:PICK
+2025-08-09 01:53:28, EXEC, v:1, k:manipulacao, mode:LOCK, size:118, fail:COMP
+2025-08-09 01:53:30, EXEC, v:1, k:manipulacao, mode:LOCK, fail:COMP
+2025-08-09 01:53:40, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0, size:117
+2025-08-09 01:53:44, EXEC, v:1, k:manipulacao, mode:LOCK, rate:0
+2025-08-09 01:59:12, EXEC, v:1, k:manipulacao, mode:LOCK, rate:100, size:119
+2025-08-09 02:02:05, EXEC, v:1, k:manipulacao, mode:FULL, rate:42
+2025-08-09 02:08:14, EXEC, v:1, k:manipulacao, mode:FULL, rate:42, size:141

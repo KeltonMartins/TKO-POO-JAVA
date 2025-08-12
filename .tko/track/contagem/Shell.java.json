@@ -22,8 +22,78 @@
         },
         {
             "label": "2025-08-07_19-53-38",
-            "content": "import java.util.List;\nimport java.util.Arrays;\nimport java.util.Scanner;\nimport java.util.ArrayList;\nimport java.text.DecimalFormat;\n\nclass Student {\n\n    public static int count(List<Integer> vet, int value) {\n        int count = 0;\n        for (Integer i: vet){\n            if (vet.get(i) == value){\n                count++;\n            }\n        }\n        return count;\n    }\n\n    public static int sum(List<Integer> vet) {\n        int sum = 0;\n        for (Integer i: vet){\n            sum += (i *= -1);\n        }\n        return sum;\n    }\n\n    public static double average(List<Integer> vet) {\n        int sum = 0;\n        for (Integer i: vet){\n            sum += (i *= -1);\n        }\n        return sum / vet.size();\n    }\n\n    public static String moreMen(List<Integer> vet) {\n        int men = 0;\n        for (Integer i: vet){\n            if (i > 0){\n                men++;\n            }\n        }\n        int women = men - vet.size();\n        if (women > men){\n            return \"women\";\n        }else if(women < men){\n            return \"men\";\n        }else{\n            return \"draw\";\n        }\n    }\n\n    public static String halfCompare(List<Integer> vet) {\n        return \"\";\n    }\n\n    public static String sexBattle(List<Integer> vet) {\n        return \"\";\n    }\n}\n\n\npublic class Shell {\n    public static void main(String[] _args) {\n        while (true) {\n            String line = scanner.nextLine();\n            System.out.println(\"$\" + line);\n            \n            var args = line.split(\" \");\n            var cmd = args[0];\n            \n            if (cmd.equals(\"end\")) {\n                break;\n            }\n            else if (args[0].equals(\"count\")) {\n                int result = Student.count(strToVet(args[1]), Integer.parseInt(args[2]));\n                System.out.println(\"\" + result);\n            }\n            else if (args[0].equals(\"half_compare\")) {\n                String result = Student.halfCompare(strToVet(args[1]));\n                System.out.println(result);\n            }\n            else if (args[0].equals(\"sex_battle\")) {\n                String result = Student.sexBattle(strToVet(args[1]));\n                System.out.println(result);\n            }\n            else if (args[0].equals(\"sum\")) {\n                int result = Student.sum(strToVet(args[1]));\n                System.out.println(\"\" + result);\n            }\n            else if (args[0].equals(\"average\")) {\n                DecimalFormat df = new DecimalFormat(\"0.00\");\n                String result = df.format(Student.average(strToVet(args[1])));\n                System.out.println(result);\n            }\n            else if (args[0].equals(\"more_men\")) {\n                String result = Student.moreMen(strToVet(args[1]));\n                System.out.println(result);\n            }\n            else {\n                System.out.println(\"fail: comando invalido\");\n            }\n        }\n    }\n\n    public static List<Integer> strToVet(String s) {\n        if (s.length() == 2) return new ArrayList<>();\n        List<String> parts = Arrays.asList(s.substring(1, s.length() - 1).split(\",\"));\n        List<Integer> result = new ArrayList<>();\n        for (String part : parts) {\n            result.add(Integer.parseInt(part.trim()));\n        }\n        return result;\n    }\n\n    static Scanner scanner = new Scanner(System.in);\n}\n",
+            "content": "@@ -491,23 +491,25 @@\n  sum += \n+(\n i *= -1\n+)\n ;%0A      \n",
             "lines": "116"
+        },
+        {
+            "label": "2025-08-08_02-23-29",
+            "content": "@@ -476,36 +476,8 @@\n t)%7B%0A\n-            if (i %3C 0)%7B%0A    \n     \n@@ -500,30 +500,16 @@\n  *= -1;%0A\n-            %7D%0A\n         \n",
+            "lines": "116"
+        },
+        {
+            "label": "2025-08-08_02-24-29",
+            "content": "@@ -546,29 +546,8 @@\n   %7D%0A\n-            sum += i%0A\n     \n",
+            "lines": "118"
+        },
+        {
+            "label": "2025-08-08_02-24-39",
+            "content": "@@ -537,34 +537,25 @@\n            %7D\n-else%7B%0A    \n+%0A\n             \n@@ -562,31 +562,16 @@\n sum += i\n-;%0A            %7D\n %0A       \n",
+            "lines": "119"
+        },
+        {
+            "label": "2025-08-08_02-24-49",
+            "content": "@@ -733,36 +733,8 @@\n t)%7B%0A\n-            if (i %3C 0)%7B%0A    \n     \n@@ -752,75 +752,18 @@\n  += \n+(\n i *= -1\n+)\n ;\n-%0A            %7Delse%7B%0A                sum += i;%0A            %7D\n %0A   \n",
+            "lines": "120"
+        },
+        {
+            "label": "2025-08-08_02-28-54",
+            "content": "@@ -686,22 +686,19 @@\n         \n-double\n+int\n  sum = 0\n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-08-08_02-29-07",
+            "content": "@@ -1092,16 +1092,22 @@\n  women =\n+ men -\n  vet.siz\n@@ -1113,14 +1113,8 @@\n ze()\n- - men\n ;%0A  \n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-08-08_02-38-27",
+            "content": "@@ -1351,555 +1351,18 @@\n     \n-double sum = 0;%0A        int%5B%5D numeros = new int%5B2%5D;%0A        for (int i = 0; i%3C vet.size(); i++)%7B%0A            if (i %3C 0)%7B%0A                sum += i *= -1;%0A            %7Delse%7B%0A                sum += i;%0A            %7D%0A            if(i %3C= vet.size() / 2)%7B%0A                numeros%5B0%5D = sum%0A            %7Delse%7B%0A                numeros%5B1%5D = sum%0A            %7D%0A        %7D%0A        if (numeros%5B0%5D %3E numeros%5B1%5D)%7B%0A            return %22first%22;%0A        %7Delse if(numeros%5B0%5D %3C numeros%5B1%5D)%7B%0A            return %22second%22;%0A        %7Delse%7B%0A            return %22draw%22;%0A        %7D\n+return %22%22;\n %0A   \n",
+            "lines": "124"
+        },
+        {
+            "label": "2025-08-08_03-10-54",
+            "content": "@@ -1624,25 +1624,24 @@\n ros%5B0%5D = sum\n-;\n %0A           \n@@ -1676,25 +1676,24 @@\n ros%5B1%5D = sum\n-;\n %0A           \n",
+            "lines": "144"
+        },
+        {
+            "label": "2025-08-08_03-11-08",
+            "content": "@@ -1371,22 +1371,19 @@\n         \n-double\n+int\n %5B%5D numer\n@@ -1623,17 +1623,16 @@\n eros%5B0%5D \n-+\n = sum;%0A \n@@ -1676,17 +1676,16 @@\n eros%5B1%5D \n-+\n = sum;%0A \n",
+            "lines": "144"
+        },
+        {
+            "label": "2025-08-08_03-12-58",
+            "content": "@@ -1339,35 +1339,38 @@\n  vet) %7B%0A        \n-int\n+double\n  sum = 0;%0A      \n@@ -1371,19 +1371,22 @@\n         \n-int\n+double\n %5B%5D numer\n@@ -1494,26 +1494,17 @@\n  sum += \n-vet.get(i)\n+i\n  *= -1;%0A\n@@ -1545,26 +1545,17 @@\n  sum += \n-vet.get(i)\n+i\n ;%0A      \n",
+            "lines": "144"
+        },
+        {
+            "label": "2025-08-08_03-13-29",
+            "content": "@@ -1355,29 +1355,15 @@\n int \n-meio = vet.size() / 2\n+sum = 0\n ;%0A  \n@@ -1396,17 +1396,16 @@\n int%5B2%5D;%0A\n-%0A\n         \n@@ -1458,71 +1458,127 @@\n    i\n-nt valor = vet.get(i);%0A            if (valor %3C 0) valor *= -1;%0A\n+f (i %3C 0)%7B%0A                sum += vet.get(i) *= -1;%0A            %7Delse%7B%0A                sum += vet.get(i);%0A            %7D\n %0A   \n@@ -1592,20 +1592,29 @@\n   if\n- \n (i %3C\n- meio) \n+= vet.size() / 2)\n %7B%0A  \n@@ -1637,29 +1637,27 @@\n meros%5B0%5D += \n-valor\n+sum\n ;%0A          \n@@ -1659,22 +1659,20 @@\n        %7D\n- \n else\n- \n %7B%0A      \n@@ -1699,13 +1699,11 @@\n  += \n-valor\n+sum\n ;%0A  \n",
+            "lines": "144"
+        },
+        {
+            "label": "2025-08-08_03-21-08",
+            "content": "@@ -274,17 +274,26 @@\n     if (\n-i\n+vet.get(i)\n  == valu\n",
+            "lines": "143"
+        },
+        {
+            "label": "2025-08-08_03-21-38",
+            "content": "@@ -1936,364 +1936,18 @@\n     \n-int men = 0;%0A        int women = 0;%0A        for (Integer i: vet)%7B%0A            if (i %3C 0)%7B%0A                women += i *= -1;%0A            %7Delse%7B%0A                men += i;%0A            %7D%0A        %7D%0A         if (women %3E men)%7B%0A            return %22women%22;%0A        %7Delse if(women %3C men)%7B%0A            return %22men%22;%0A        %7Delse%7B%0A            return %22draw%22;%0A        %7D\n+return %22%22;\n %0A   \n",
+            "lines": "143"
+        },
+        {
+            "label": "2025-08-08_03-28-16",
+            "content": "import java.util.List;\nimport java.util.Arrays;\nimport java.util.Scanner;\nimport java.util.ArrayList;\nimport java.text.DecimalFormat;\n\nclass Student {\n\n    public static int count(List<Integer> vet, int value) {\n        int count = 0;\n        for (Integer i: vet){\n            if (i == value){\n                count++;\n            }\n        }\n        return count;\n    }\n\n    public static int sum(List<Integer> vet) {\n        int sum = 0;\n        for (Integer i: vet){\n            if (i < 0){\n                sum += i *= -1;\n            }else{\n                sum += i;\n            }\n        }\n        return sum;\n    }\n\n    public static double average(List<Integer> vet) {\n        double sum = 0;\n        for (Integer i: vet){\n            if (i < 0){\n                sum += i *= -1;\n            }else{\n                sum += i;\n            }\n        }\n        return sum / vet.size();\n    }\n\n    public static String moreMen(List<Integer> vet) {\n        int men = 0;\n        for (Integer i: vet){\n            if (i > 0){\n                men++;\n            }\n        }\n        int women = vet.size() - men;\n        if (women > men){\n            return \"women\";\n        }else if(women < men){\n            return \"men\";\n        }else{\n            return \"draw\";\n        }\n    }\n\n    public static String halfCompare(List<Integer> vet) {\n        int meio = vet.size() / 2;\n        int[] numeros = new int[2];\n\n        for (int i = 0; i< vet.size(); i++){\n            int valor = vet.get(i);\n            if (valor < 0) valor *= -1;\n\n            if (i < meio) {\n                numeros[0] += valor;\n            } else {\n                numeros[1] += valor;\n            }\n        }\n        if (numeros[0] > numeros[1]){\n            return \"first\";\n        }else if(numeros[0] < numeros[1]){\n            return \"second\";\n        }else{\n            return \"draw\";\n        }\n    }\n\n    public static String sexBattle(List<Integer> vet) {\n        int men = 0;\n        int women = 0;\n        for (Integer i: vet){\n            if (i < 0){\n                women += i *= -1;\n            }else{\n                men += i;\n            }\n        }\n         if (women > men){\n            return \"women\";\n        }else if(women < men){\n            return \"men\";\n        }else{\n            return \"draw\";\n        }\n    }\n}\n\n\npublic class Shell {\n    public static void main(String[] _args) {\n        while (true) {\n            String line = scanner.nextLine();\n            System.out.println(\"$\" + line);\n            \n            var args = line.split(\" \");\n            var cmd = args[0];\n            \n            if (cmd.equals(\"end\")) {\n                break;\n            }\n            else if (args[0].equals(\"count\")) {\n                int result = Student.count(strToVet(args[1]), Integer.parseInt(args[2]));\n                System.out.println(\"\" + result);\n            }\n            else if (args[0].equals(\"half_compare\")) {\n                String result = Student.halfCompare(strToVet(args[1]));\n                System.out.println(result);\n            }\n            else if (args[0].equals(\"sex_battle\")) {\n                String result = Student.sexBattle(strToVet(args[1]));\n                System.out.println(result);\n            }\n            else if (args[0].equals(\"sum\")) {\n                int result = Student.sum(strToVet(args[1]));\n                System.out.println(\"\" + result);\n            }\n            else if (args[0].equals(\"average\")) {\n                DecimalFormat df = new DecimalFormat(\"0.00\");\n                String result = df.format(Student.average(strToVet(args[1])));\n                System.out.println(result);\n            }\n            else if (args[0].equals(\"more_men\")) {\n                String result = Student.moreMen(strToVet(args[1]));\n                System.out.println(result);\n            }\n            else {\n                System.out.println(\"fail: comando invalido\");\n            }\n        }\n    }\n\n    public static List<Integer> strToVet(String s) {\n        if (s.length() == 2) return new ArrayList<>();\n        List<String> parts = Arrays.asList(s.substring(1, s.length() - 1).split(\",\"));\n        List<Integer> result = new ArrayList<>();\n        for (String part : parts) {\n            result.add(Integer.parseInt(part.trim()));\n        }\n        return result;\n    }\n\n    static Scanner scanner = new Scanner(System.in);\n}\n",
+            "lines": "158"
         }
     ]
 }
